@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Anthony Safatli - Home</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Images/logo.png">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+    <body>
+        <header>
+            <button id="darkmode" class="color-button"></button>
+            <button id="lightmode" class="color-button"></button>
+            <button id="neonmode" class="color-button"></button>
+            <h1>Anthony Safatli</h1>
+            <button id="hamburger">
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+            </button>
+            <nav class="invisible">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contactme.html">Contact Me</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="center-text">Contact Me</h2>
+
+            <!-- Socials -->
+            <div>
+                <h3 class="center-text">Socials</h3>
+                <div class="social-container">
+                    <a href="https://www.instagram.com/anthonysafatli124/" target="_blank">
+                        <img class="social-item" alt="instagrams logo" src="Assets/Images/insta logo.png" />
+                    </a>
+                    <a href="mailto://anthonysafatli@dal.ca" target="_blank">
+                        <img class="social-item" alt="an envelope for the mail icon" src="Assets/Images/mail icon.png" />
+                    </a>
+                    <a href="https://github.com/AnthonySafatli" target="_blank">
+                        <img class="social-item" alt="githubs logo" src="Assets/Images/github logo.png" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+                <br />
+                <h3 class="center-text">Send Me a Message</h3>
+                <form>
+                    <div id="email-label-div">
+                        <label for="email" id="email-label">Email:</label>
+                    </div>
+                    <div id="email-div">
+                        <input type="email" id="email" name="email" required/>
+                    </div>
+                    <div id="subject-label-div">
+                        <label for="subject" id="subject-label">Subject:</label>
+                    </div>
+                    <div id="subject-div">
+                        <input type="text" id="subject" name="subject" required/>
+                    </div>
+                    <div id="message-label-div">
+                        <label for="message" id="message-label">Message:</label>
+                    </div>
+                    <div id="message-div">
+                        <textarea id="message" name="message" rows="10" required></textarea>
+                    </div>
+                    <div id="submit-div">
+                        <input type="submit" id="submit" value="Send!" />
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Anthony Safatli 2023</p>
+        </footer>
+
+        <script src="JavaScript/navbar.js"></script>
+        <script src="JavaScript/colourChanger.js"></script>
+        <script src="JavaScript/confirmEmail.js"></script>
+    </body>
+</html>

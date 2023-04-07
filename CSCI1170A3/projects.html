@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Anthony Safatli - Home</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Images/logo.png">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+    <body>
+        <header>
+            <button id="darkmode" class="color-button"></button>
+            <button id="lightmode" class="color-button"></button>
+            <button id="neonmode" class="color-button"></button>
+            <h1>Anthony Safatli</h1>
+            <button id="hamburger">
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+            </button>
+            <nav class="invisible">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contactme.html">Contact Me</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="title">Projects</h2>
+
+            <!-- Projects List / Gallery -->
+            <div class="projects-gallery">
+                <div class="project">
+                    <img class="project-image" alt="pacman-logo" src="Assets/Images/pacman logo.png" />
+                    <div class="info-container-invisible" role="button">
+                        <div class="info">
+                            <h3>Pacman 3D</h3>
+                            <p>
+                                I made this very early on in my programming career. It was made using the 3D Unity Game engine. There are 6 different maps,
+                                based on real pacman maps, such as the origin pacman map, the prototype, and popular pacman clones such mrs pacman. It is first person
+                                and 3D with a minimap so you don't run into ghosts while turning corners. Once all pellets have been collected you get loaded into
+                                another random map. You have 5 lives and try to get a highscore. There is a saving system for stats and the highscore.
+                            </p>
+                            <p class="click-anywhere">Click anywhere to close</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project-image" alt="the letter n" src="Assets/Images/null logo.png" />
+                    <div class="info-container-invisible">
+                        <div class="info">
+                            <h3>Null Text Editor</h3>
+                            <p>
+                                This is a text editor made using C++ and OpenGL. The text is rendered using a texture (which is why it is pixelated). The idea
+                                was to make a text editor that did not use the mouse, that also serves the purpose of being a journal/notes app. The way you
+                                navigate the app is using a command line style interface. The very first line is a command line where you input a command and the
+                                app with respond. There will also be a few shortcuts that you can use.
+                            </p>
+                            <p class="click-anywhere">Click anywhere to close</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project-image" alt="the number 7" src="Assets/Images/mnist number.png" />
+                    <div class="info-container-invisible">
+                        <div class="info">
+                            <h3>MNist Number Classifier</h3>
+                            <p>
+                                A simple app I made to learn about machine learning. It uses the MNist handwritten digit dataset to train a simple
+                                neural network that can tell what digit you wrote with decent accuracy. It has a canvas where you can draw, and it will tell you
+                                what number it thinks it is.
+                            </p>
+                            <p class="click-anywhere">Click anywhere to close</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project-image" alt="rootscape main character" src="Assets/Images/rootscape player.png" />
+                    <div class="info-container-invisible">
+                        <div class="info">
+                            <h3>Rootscape</h3>
+                            <p>
+                                The idea for the game is based on the theme of roots. You are a kid who steals the magical root from the forest, which makes the
+                                forest mad. This them prompts evil ghosts and bushes to attack you. You then run around and try to kill as many enemies as possible.
+                                The game was made in a weekend with a team of 4 beginners using the Unity Game engine. It was pretty fun.
+                            </p>
+                            <p class="click-anywhere">Click anywhere to close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Anthony Safatli 2023</p>
+        </footer>
+
+        <script src="JavaScript/projectGallery.js"></script>
+        <script src="JavaScript/navbar.js"></script>
+        <script src="JavaScript/colourChanger.js"></script>
+    </body>
+</html>

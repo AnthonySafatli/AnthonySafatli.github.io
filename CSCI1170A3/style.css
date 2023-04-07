@@ -1,0 +1,425 @@
+﻿/* ======= Color Variables ======= */
+:root {
+    --nav-background: #03111a;
+    --nav-text: #ffffff;
+    --nav-special: #c7e9ff;
+    --body-background: #13212d;
+    --body-text: #e6e6e6;
+    --body-special: #d3ddf5;
+}
+
+/* ======= Template ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    color: var(--body-text)
+}
+
+.center-text {
+    text-align: center;
+}
+
+body {
+    background-color: var(--body-background);
+}
+
+main {
+    margin: 20px;
+}
+
+div { 
+    margin: 20px 0px;
+}
+
+a {
+    color: var(--body-special);
+}
+
+h1 { 
+    margin-left: 10px;
+}
+
+.color-button {
+    margin: 0px 3px;
+    float: left;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#darkmode {
+    background-color: #13212d;
+}
+
+#darkmode:hover {
+    border: 2px solid #ffffff;
+}
+
+#lightmode {
+    background-color: #f5faff;
+}
+
+#lightmode:hover {
+    border: 2px solid #000000;
+}
+
+#neonmode {
+    background-color: #ff69b9;
+}
+
+#neonmode:hover {
+    border: 2px solid lightgreen;
+}
+
+header {
+    padding: 15px;
+    background-color: var(--nav-background);
+    color: var(--nav-text);
+}
+
+header > h1 {
+    display: inline;
+}
+
+header > button {
+    background-color: transparent;
+    border: none;
+    float: right;
+}
+
+header > button:hover > .hamburger-icon {
+    background-color: var(--nav-text);
+}
+
+.hamburger-icon {
+    background-color: var(--nav-special);
+    height: 4px;
+    width: 20px;
+    margin: 4px;
+}
+
+nav {
+    display: block;
+}
+
+nav > a {
+    display: block;
+}
+
+nav > a, nav > a:hover, nav > a:focus, nav > a:active {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    margin: 5px;
+}
+
+nav > a:hover {
+    color: var(--nav-special);
+}
+
+.invisible {
+    display: none;
+}
+
+/* Tablet and Desktop */
+@media screen and (min-width: 1000px) {
+    nav {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .invisible {
+        display: flex;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+.title {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--nav-background);
+    color: var(--nav-text);
+    padding: 20px;
+}
+
+/* ======= Index ======= */
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hero-item {
+    width: 100%;
+    padding: 2vh;
+    text-align: center;
+}
+
+.hero-item > img {
+    max-height: 50vh;
+}
+
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+td, th {
+    border: 1px solid;
+    text-align: center;
+}
+
+td {
+    background-color: var(--nav-background);
+    padding: 15px;
+    background-color: var(--body-background);
+}
+
+th {
+    background-color: var(--nav-background);
+    padding: 10px 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Desktop */ 
+@media screen and (min-width: 1400px) 
+{
+    .hero-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .hero-item {
+        width: 50%;
+        padding: 2vh;
+        text-align: left;
+    }
+}
+
+.hero-item > img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#hero-text {
+    color: var(--body-special);
+    font-size: 3em;
+}
+
+.project-contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pc-item {
+    width: 100%;
+    padding: 2vh;
+    text-align: center;
+}
+
+/* Tablet and Desktop */
+@media screen and (min-width: 1000px) {
+    .pc-item {
+        width: 50%;
+        padding: 2vh;
+        text-align: center;
+    }
+}
+
+/* ======= Projects ======= */
+.projects-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project > img {
+    transition: width 400ms, height 400ms;
+    width: 400px;
+    height: 400px;
+    image-rendering: pixelated;
+    border-radius: 10px;
+}
+
+.project > img:hover {
+    cursor: pointer;
+    width: 500px;
+    height: 500px;
+    transition: width 400ms, height 400ms;
+}
+
+.info-container-invisible {
+    display: none;
+}
+
+.info-container {
+    background-color: #00000099;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: 0;
+}
+
+.info-container > .info {
+    color: white;
+    margin: 0;
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: initial;
+}
+
+.info-container > .info > h3 {
+    margin-bottom: 10px;
+}
+
+.click-anywhere {
+    margin: 20px;
+    text-align: center;
+}
+
+/* ======= Contact Me ======= */
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-item {
+    width: 40vw;
+    height: 40vw;
+    margin: 0px 100px;
+}
+
+/* Tablet */
+@media screen and (min-width: 1000px) {
+    .social-item {
+        width: 20vw;
+        height: 20vw;
+        margin: 0px 20px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1400px) {
+    .social-item {
+        width: 10vw;
+        height: 10vw;
+        margin: 0px 20px;
+    }
+}
+
+form {
+    display: grid;
+
+    grid-template-areas:
+        "email-label"
+        "email"
+        "subject-label"
+        "subject"
+        "message-label"
+        "message"
+        "submit";
+}
+
+form > div {
+    margin: 10px;
+}
+
+/* Tablet and Desktop */
+@media screen and (min-width: 1000px) {
+    form {
+        display: grid;
+        grid-template-areas: 
+            "email-label subject-label"
+            "email subject"
+            "message-label message-label"
+            "message message"
+            "submit submit";
+    }
+
+    #subject-label-div {
+        margin-top: 20px;
+    }
+}
+
+#email-label-div {
+    margin-top: 20px;
+    grid-area: email-label;
+}
+
+#email-div {
+    grid-area: email;
+}
+
+#subject-label-div {
+    grid-area: subject-label;
+}
+
+#subject-div {
+    grid-area: subject;
+}
+
+#message-label-div {
+    grid-area: message-label;
+}
+
+#message-div {
+    grid-area: message;
+}
+
+#submit-div {
+    grid-area: submit;
+}
+
+#email, #subject, #message {
+    width: 100%;
+}
+
+input, textarea {
+    padding: 10px;
+    background-color: var(--body-special);
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    color: var(--body-background);
+    font-weight: bold;
+}
+
+#submit-div {
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    width: 20vw; 
+    padding: 7px;
+}
